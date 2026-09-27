@@ -140,7 +140,7 @@ body {
 }
 
 .nav-panel__link::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -2px;
@@ -157,7 +157,6 @@ body {
 .nav-panel__link:active::after {
   transform: scaleX(1);
 }
-
 
 .header__icon-close {
   display: none;
