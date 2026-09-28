@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
-  background-color: var(--clr-blue-600);
+  background-color: var(--clr-blue-700);
   font-family: "Inter", sans-serif;
   color: var(--clr-white);
   font-size: 1.0625rem;
@@ -40,7 +40,7 @@ body {
   padding: 1.5rem 3rem;
   position: relative;
   z-index: 20;
-  background-color: var(--clr-blue-600);
+  background-color: var(--clr-blue-700);
 }
 
 .header__logo-dot {
@@ -112,7 +112,7 @@ body {
   bottom: 0;
   right: 0;
   width: calc((1.1 / (0.9 + 1.1)) * 100% / 2 + 1px);
-  background-color: var(--clr-blue-600);
+  background-color: var(--clr-blue-700);
   z-index: 10;
   transform: translateX(100%);
   transition: all 0.3s ease-in;
@@ -188,7 +188,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--clr-blue-600);
+  background-color: var(--clr-blue-700);
 }
 
 .hero__text-content {
@@ -229,6 +229,11 @@ main {
   flex-direction: column;
   justify-content: space-between;
   padding: 2rem;
+  background-color: var(--clr-blue-700);
+}
+
+.hero__stat:hover {
+  cursor: pointer;
   background-color: var(--clr-blue-600);
 }
 
