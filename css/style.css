@@ -144,7 +144,7 @@ body {
 
 .nav-panel__link:link,
 .nav-panel__link:visited {
-  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  font-size: 1.75rem;
   font-weight: 400;
   text-decoration: none;
   color: var(--clr-white);
@@ -192,7 +192,7 @@ main {
 }
 
 .hero__text-content {
-  padding: 0rem 3rem;
+  padding: 3rem 3rem;
 }
 
 .hero__heading {
@@ -242,6 +242,7 @@ main {
   align-items: center;
   justify-content: space-between;
   font-size: clamp(1.75rem, 3vw, 2.25rem);
+  padding-bottom: 3rem;
 }
 
 .hero__icons {
