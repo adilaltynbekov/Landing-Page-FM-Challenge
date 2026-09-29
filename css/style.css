@@ -15,6 +15,11 @@
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 html {
   font-size: 100%;
   scrollbar-gutter: stable;
@@ -54,6 +59,7 @@ body.no-scroll {
   height: 0.75rem;
   border-radius: 50%;
   background-color: var(--clr-white);
+  flex-shrink: 0;
 }
 
 .header__logo-link {
@@ -71,6 +77,7 @@ body.no-scroll {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .header__menu-btn:hover {
@@ -206,12 +213,14 @@ main {
   font-weight: 500;
   line-height: 1.1;
   max-width: 11ch;
+  overflow-wrap: break-word;
 }
 
 .hero__description {
   max-width: 35ch;
   margin-top: 3rem;
   line-height: 1.5;
+  overflow-wrap: break-word;
 }
 
 .hero__stat-box {

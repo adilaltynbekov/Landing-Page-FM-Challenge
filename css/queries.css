@@ -70,3 +70,9 @@
     padding-bottom: 0.5rem;
   }
 }
+
+@media (max-height: 28rem) {
+  .nav-panel {
+    max-height: 100dvh;
+  }
+}
