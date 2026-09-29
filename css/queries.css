@@ -22,9 +22,8 @@
   }
 
   .hero__text-box {
-    
   }
-  
+
   .hero__text-content {
     padding: clamp(6rem, 10vh, 9rem) 2rem;
   }
@@ -32,8 +31,9 @@
   .hero__description {
     margin-top: 1.5rem;
   }
-  
-  .hero__stat-row-1, .hero__stat-row-2 {
+
+  .hero__stat-row-1,
+  .hero__stat-row-2 {
     flex-direction: column;
   }
 
@@ -48,7 +48,7 @@
     align-items: center;
     justify-content: center;
     border-left: none;
-    border-bottom: 1px solid var(--clr-blue-400)
+    border-bottom: 1px solid var(--clr-blue-400);
   }
 
   .nav-panel__nav {

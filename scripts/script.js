@@ -1,16 +1,20 @@
 const headerMenuBtn = document.querySelector(".header__menu-btn");
 const navPanel = document.querySelector(".nav-panel");
-const headerOverlay = document.querySelector(".header__overlay");
-const bodyElement = document.querySelector('body');
+const bodyElement = document.querySelector("body");
+const overlayElement = document.querySelector(".header__overlay");
 
-headerMenuBtn.addEventListener("click", function () {
+const togglePanel = function () {
   navPanel.classList.toggle("nav-panel__open");
-  headerOverlay.classList.toggle("header__overlay--active");
-  headerMenuBtn.classList.toggle('header__menu-btn--active');
+  overlayElement.classList.toggle("header__overlay--active");
+  headerMenuBtn.classList.toggle("header__menu-btn--active");
 
-  const isPanelOpen = navPanel.classList.contains('nav-panel__open');
+  const isPanelOpen = navPanel.classList.contains("nav-panel__open");
 
-  headerMenuBtn.setAttribute('aria-expanded', isPanelOpen)
+  headerMenuBtn.setAttribute("aria-expanded", isPanelOpen);
 
-  bodyElement.classList.toggle('no-scroll');
-});
+  bodyElement.classList.toggle("no-scroll");
+};
+
+headerMenuBtn.addEventListener("click", togglePanel);
+
+overlayElement.addEventListener("click", togglePanel);
